@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="logo">
-            <p>EMANUEL</p>
+            <a class="logo" href="">EMANUEL</a>
         </div>
         <nav class="navBar">
             <ul class="menu">
@@ -26,7 +26,6 @@
     </header>
     <main>
         <section id="home">
-
             <div class="laptop__container">
                 <img class="laptop" src="./img/laptop.png" alt="">
             </div>
@@ -90,45 +89,46 @@
         </section>
     </main>
     <footer id="contact">
-        <div class="contact__title">
-            <h2>Contact me</h2>
+        <div>
+            <h2 class="contact__title">Contact me</h2>
         </div>
         <div class="contact__body">
             <div class="contact__info">
-                <h3>Let's get in touch!</h3>
+                <h3 class="contact__info__title">Let's get in touch!</h3>
 
-                <p>Either by <span>email</span> or through <span>social media.</span></p>
+                <p class="contact__text">Either by <span>email</span> or through <span>social media.</span></p>
 
-                <div>
-                    <i></i>
-                    <i></i>
+                <div class="contact__img__container">
+                    <a href=""><img src="./img/icons/email.png" alt=""></a>
+                    <a href=""><img src="./img/icons/github.png" alt=""></a>
                 </div>
             </div>
             <div class="contact__form">
                 <form>
                     <div class="input-group">
-                      <div class="input-group__item">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
-                      </div>
-                      <div class="input-group__item">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                      </div>
+                        <div class="input-group__item">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="input-group__item">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
                     </div>
                     <label for="message">Message</label>
-                    <textarea id="message" name="message"></textarea>
+                    <textarea id="message" name="message" rows="10" cols="50"></textarea>
                     <input type="submit" value="Message me">
-                  </form>
-                  
-                  
+                </form>
+
+
 
             </div>
         </div>
-        <div>
+        <div class="footer">
             <p>2023 All rights reserved - Designed by Marula and developed by Emanuel Melian</p>
         </div>
     </footer>
-</body>
 
+    <script src="./js/navBar.js"></script>
+</body>
 </html>
