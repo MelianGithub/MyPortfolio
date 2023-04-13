@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    background-color: RGB(21, 21, 21);
+
+}
+
+.logo {
+    margin-left: 50px;
+    width: 35%;
+    font-weight: bold;
+    color: #f4bb03;
+}
+
+.navBar {
+    width: 75%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+}
+
+.menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 6);
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #f4bb03;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: #555;
+}
+
+
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-color: RGB(21, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* filter: brightness(1.2); */
+}
+
+.laptop__container {
+    width: 50%;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.laptop {
+    width: 100%;
+    height: 99%;
+    padding-top: 10px;
+
+}
+
+.introduction__container {
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    gap: 50px;
+
+}
+
+.introduction__header {}
+
+.introduction {
+    color: #f4bb03;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.developer {
+    color: #4d4d4d;
+    font-size: 40px
+}
+
+.introduction__text {
+    width: 70%;
+    color: #4d4d4d;
+    font-size: 25px;
+
+}
+
+.introduction__footer {
+    color: #f4bb03;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px
+}
+
+/* About Me */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__body {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about__aboutme {
+    color: #4d4d4d;
+    margin-bottom: 20px;
+    font-size: 40px
+}
+
+.about__hello span {
+    color: #f4bb03;
+}
+
+.about__hello {
+    color: #d4d4d4;
+    font-size: 30px;
+    width: 60%;
+}
+
+.about__text {
+    width: 70%;
+    color: #4d4d4d;
+    font-size: 25px;
+}
+
+.about__text p {
+    margin-bottom: 30px;
+}
+
+.about__img__container {
+    width: 50%;
+}
+
+.emanuel {
+    width: 80%;
+}
+
+/* Skills */
+
+#skills {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background-color: RGB(21, 21, 21);
+}
+
+/* Projects */
+
+#projects {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background-color: #1e1e1e;
+}
+
+/* Contact */
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    background-color: RGB(21, 21, 21);
+}
+
+.contact__title {
+    color: #4d4d4d;
+    text-align: center;
+}
+
+.contact__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+    padding: 40px;
+}
+
+.contact__info {
+    width: 40%;
+}
+
+/* form */
+
+.contact__form {
+    width: 60%;
+}
+
+.contact__form form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact__form form label {
+    margin-top: 1rem;
+    color: #4d4d4d;
+    padding: 10px;
+}
+
+.contact__form form .input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact__form form .input-group__item {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.contact__form form input[type="text"],
+.contact__form form input[type="email"],
+.contact__form form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
+.contact__form form input[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #e7f618;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact__form form input[type="submit"]:hover {
+    background-color: #0069d9;
+}
