@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -186,7 +187,16 @@ header {
     padding: 50px;
     background-color: RGB(21, 21, 21);
 }
-
+.skills__img__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.skills__img__container img{
+    width: 150px;
+object-fit: cover;
+}
 /* Projects */
 
 #projects {
