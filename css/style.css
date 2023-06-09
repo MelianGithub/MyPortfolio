@@ -389,3 +389,8 @@ header {
 .hidden {
     display: none;
 }
+
+i{
+    font-size: 200px;
+    color: wheat;
+}
