@@ -38,6 +38,7 @@ header {
 
 .navBar {
     width: 75%;
+    visibility: visible;
 
 }
 
@@ -92,6 +93,7 @@ header {
     width: 100%;
     height: 99%;
     padding-top: 10px;
+    object-fit: contain;
 
 }
 
@@ -118,7 +120,7 @@ header {
 }
 
 .introduction__text {
-    width: 70%;
+    width: 75%;
     color: #fff;
     font-size: 25px;
 
@@ -213,8 +215,8 @@ header {
     /* margin-top: 80px; */
 }
 
-.skills__img__container i{
-font-size: 150px;
+.skills__img__container i {
+    font-size: 150px;
 }
 
 /* Projects */
@@ -244,7 +246,7 @@ font-size: 150px;
     justify-content: center;
     gap: 20px;
     align-items: center;
-    
+
 }
 
 .projects__img__container div {
@@ -256,12 +258,13 @@ font-size: 150px;
 }
 
 .marula {
-    width: 100%; /* Ahora el elemento marula ocupará el 100% del div anterior */
+    width: 100%;
+    /* Ahora el elemento marula ocupará el 100% del div anterior */
     height: 100%;
     object-fit: cover;
     object-position: top;
     border-radius: 10px;
-    
+
 }
 
 
@@ -382,7 +385,7 @@ font-size: 150px;
     background-color: #e7f618a9;
     color: black;
     cursor: pointer;
-    
+
 
 }
 
@@ -401,16 +404,107 @@ font-size: 150px;
     display: none;
 }
 
-i{
+i {
     font-size: 200px;
     color: #fff;
 }
 
-/* @media screen and (max-width: 850px) {
-    
-  } */
+.show {
+    opacity: 1;
+}
+
+.close {
+    display: none;
+}
+
+
+
+/* @media screen and (min-width:768px) {
+    .button-menu{
+      display: none;
+    }
   
-  /* @media screen and (max-width: 500px) {
     
-  } */
-  
+  }
+ */
+ .button-menu{
+    display: none;
+  }
+
+
+  @media screen and (max-width: 850px) {
+    .button-menu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .button-menu span {
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #444444;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all .2s linear;
+    }
+
+    .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #ffffff;
+    }
+
+    .button-menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+
+    .button-menu.close span:nth-child(3) {
+        display: none;
+    }
+
+    .introduction__container {
+        gap: 30px;
+    }
+
+    .introduction {
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .introduction__text {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .developer {
+        font-size: 30px;
+    }
+
+    .navBar {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease-in-out; 
+    }
+
+    .navBar.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu{
+        position: relative;
+        top: 50;
+        right: 00px;
+        flex-direction: column;
+    }
+
+}
