@@ -6,7 +6,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
-
+}
+body{
+    width: 100%;
+    height: auto;
 }
 
 header {
@@ -143,9 +146,16 @@ header {
     align-items: center;
     justify-content: center;
 }
+.doscapas{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .about__body {
-    width: 50%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -178,11 +188,11 @@ header {
 }
 
 .about__img__container {
-    width: 50%;
+    width: 25%;
 }
 
 .emanuel {
-    width: 80%;
+    width: 100%;
 }
 
 /* Skills */
@@ -419,20 +429,17 @@ i {
 
 
 
-/* @media screen and (min-width:768px) {
-    .button-menu{
-      display: none;
-    }
-  
-    
-  }
- */
- .button-menu{
+
+.button-menu {
     display: none;
-  }
+}
 
 
-  @media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {
+    .logo {
+        width: 70%;
+        margin-left: 10px;
+    }
     .button-menu {
         z-index: 200;
         width: 40px;
@@ -492,7 +499,7 @@ i {
     .navBar {
         opacity: 0;
         visibility: hidden;
-        transition: opacity 0.5s ease-in-out; 
+        transition: opacity 0.5s ease-in-out;
     }
 
     .navBar.show {
@@ -500,11 +507,88 @@ i {
         visibility: visible;
     }
 
-    .menu{
+    .menu {
         position: relative;
         top: 50;
         right: 00px;
         flex-direction: column;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    #home {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .laptop__container{
+        height: auto;
+        margin: 0;
+    }
+
+    .laptop{
+        height: auto;
+        padding-top: 10%;
+    }
+    .introduction__container{
+        width: 80%;
+    }
+
+    /* ------ */
+    #about{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px ;
+    }
+    .doscapas{
+        flex-direction: column;
+    }
+    .about__body{
+        width: 100%;
+        align-items: center;
+        
+    }
+    .about__header{
+        width: 100%;
+    }
+    .about__body h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .about__hello{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about__text{
+        width: 80%;
+        text-align: center;
+    }
+    .about__text p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .introduction__text{
+        width: 100%;
+    }
+
+    .introduction__footer{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .about__img__container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .emanuel{
+        width: 40%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        
+    }
 }
