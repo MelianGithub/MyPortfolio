@@ -628,5 +628,37 @@ i {
         background-color: #555;
         border-radius: 10px;
     }
-    
+
+    /* Contacto*/
+
+    #contact{
+        height: auto;
+        padding: 5px;
+    }
+
+    .contact__title{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .contact__body{
+        width: 100%;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .contact__info{
+        width: 60%;
+    }
+    .contact__info__title{
+        font-size: 25px;
+    }
+    .contact__form{
+        margin: 0;
+        width: 100%;
+    }
+
+
+    .footer{
+        text-align: center;
+    }
 }
