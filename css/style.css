@@ -147,7 +147,7 @@ header {
     justify-content: center;
 }
 .doscapas{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,7 +478,7 @@ i {
     }
 
     .introduction__container {
-        gap: 30px;
+        /* gap: 30px; */
     }
 
     .introduction {
@@ -519,6 +519,7 @@ i {
     #home {
         flex-direction: column;
         justify-content: start;
+        padding-top: 150px;
     }
     .laptop__container{
         height: auto;
@@ -530,7 +531,7 @@ i {
         padding-top: 10%;
     }
     .introduction__container{
-        width: 80%;
+        width: 100%;
     }
 
     /* ------ */
