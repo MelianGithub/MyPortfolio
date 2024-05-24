@@ -147,7 +147,7 @@ header {
     justify-content: center;
 }
 .doscapas{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,13 +199,14 @@ header {
 
 #skills {
     width: 100%;
-    height: auto;
+    height: auto;   
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
     padding: 50px;
     background-color: RGB(21, 21, 21);
+    
 }
 
 .skills__title {
@@ -217,6 +218,7 @@ header {
 
 .skills__img__container {
     width: 90%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -227,7 +229,11 @@ header {
 
 .skills__img__container i {
     font-size: 150px;
+    cursor: pointer;
+
 }
+
+
 
 /* Projects */
 
@@ -270,10 +276,33 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: left;
+    object-position: top;
     border-radius: 10px;
-
+    position: relative; 
 }
+
+.desc {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    padding: 10px; 
+    box-sizing: border-box; 
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 500ms;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.imgbox__projects {
+    position: relative; 
+}
+
+.imgbox__projects:hover .desc {
+    opacity: 1;
+}
+
 
 
 /* Contact */
@@ -476,9 +505,7 @@ i {
         display: none;
     }
 
-    .introduction__container {
-        /* gap: 30px; */
-    }
+    
 
     .introduction {
         margin-bottom: 5px;
@@ -512,6 +539,45 @@ i {
         flex-direction: column;
     }
 
+    .about__aboutme{
+        font-size: 2em;
+    }
+
+    .about__hello{
+        font-size: 1.5em;
+    }
+
+    .about__text p{
+        font-size: 0.8em;
+    }
+
+    #contact {
+        gap: 10px;
+        padding: 20px;
+        
+    }
+
+    .contact__body{
+        width: 100%;
+    }
+    .contact__title{
+        font-size: 2em;
+    }
+    .contact__info{
+        width: 50%;
+    }
+
+    .contact__form{
+        width: 80%;
+    }
+
+    .contact__text{
+        font-size: 1.2em;
+    }
+    .contact__info__title{
+        font-size: 1.5em;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
