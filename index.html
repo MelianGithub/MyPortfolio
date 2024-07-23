@@ -38,8 +38,26 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- ANIMACIONES -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- EMAILJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "BHHHNADQVyj5_mXKb",
+        });
+      })();
+    </script>
+
     <title>Web Developer Emanuel Melian - Home</title>
   </head>
 
@@ -66,19 +84,26 @@
     <main>
       <section id="home">
         <div class="doscapas">
-          <div class="laptop__container">
+          <div class="laptop__container animate__animated animate__fadeInLeft">
             <img class="laptop" src="./img/laptop.png" alt="" />
           </div>
 
           <div class="introduction__container">
             <div class="introduction__header">
-              <h1 class="developer">Web Developer</h1>
+              <h1 class="developer animate__animated animate__backInRight">
+                Web Developer
+              </h1>
             </div>
-            <p class="introduction__text">
-              I'm currently studying web development in JaP, and developing my
-              first proyects.
+            <p
+              class="introduction__text animate__animated animate__backInRight"
+            >
+              I'm currently working on personal projects and studying web
+              development to continue learning new technologies. Learn more
+              about me
             </p>
-            <a class="introduction__footer" href="#about"
+            <a
+              class="introduction__footer animate__animated animate__fadeInDown animate__delay-1s"
+              href="#about"
               >Learn more about me</a
             >
           </div>
@@ -132,61 +157,76 @@
           <h6 class="projects__title">Projects</h6>
         </div>
         <div class="projects__img__container">
-            <div class="imgbox__projects">
-                <a href="https://www.maruladesigns.com/" target="_blank">
-                    <img class="marula" src="./img/marulapagina.png" alt=""/>
-                </a>
-                <div class="desc">
-                    <p>Mariana Medina's professional portfolio, graphic designer</p>
-                </div>
+          <div class="imgbox__projects">
+            <a href="https://www.maruladesigns.com/" target="_blank">
+              <img class="marula" src="./img/marulapagina.png" alt="" />
+            </a>
+            <div class="desc">
+              <p>Mariana Medina's professional portfolio, graphic designer</p>
             </div>
-        
-            <div class="imgbox__projects">
-                <a href="https://664bb72d11b5252cd06c1129--mellifluous-kringle-ebecbb.netlify.app/" target="_blank">
-                    <img class="marula" src="./img/reymarollos.jpg" alt=""/>
-                </a>
-                <div class="desc">
-                    <p>E-commerce Reyma rollos, a privite company</p>
-                </div>
+          </div>
+
+          <div class="imgbox__projects">
+            <a
+              href="https://664bb72d11b5252cd06c1129--mellifluous-kringle-ebecbb.netlify.app/"
+              target="_blank"
+            >
+              <img class="marula" src="./img/reymarollos.jpg" alt="" />
+            </a>
+            <div class="desc">
+              <p>E-commerce Reyma rollos, a privite company</p>
             </div>
-            
-            <div class="imgbox__projects">
-                <a href="https://emanuelfront-end.netlify.app/" target="_blank">
-                    <img class="marula" src="./img/miweb.png" alt=""/>
-                </a>
-                <div class="desc">
-                    <p>My portfolio web was developed for myself</p>
-                </div>
+          </div>
+
+          <div class="imgbox__projects">
+            <a href="https://emanuelfront-end.netlify.app/" target="_blank">
+              <img class="marula" src="./img/miweb.png" alt="" />
+            </a>
+            <div class="desc">
+              <p>My portfolio web was developed for myself</p>
             </div>
-            
-            <div class="imgbox__projects">
-                <a href="https://elegant-franklin-3f1508.netlify.app/contacto" target="_blank">
-                    <img class="marula" src="./img/BienesRaicesWeb.png" alt=""/>
-                </a>
-                <div class="desc">
-                    <p>Course Udemy - Juan Pablo De la torre Valdez</p>
-                </div>
+          </div>
+
+          <div class="imgbox__projects">
+            <a
+              href="https://elegant-franklin-3f1508.netlify.app/contacto"
+              target="_blank"
+            >
+              <img class="marula" src="./img/BienesRaicesWeb.png" alt="" />
+            </a>
+            <div class="desc">
+              <p>Course Udemy - Juan Pablo De la torre Valdez</p>
             </div>
-            
-            <div class="imgbox__projects">
-                <a href="https://xenodochial-mccarthy-9b0f29.netlify.app/" target="_blank">
-                    <img class="marula" src="./img/blogcafe.png" alt=""/>
-                </a>
-                <div class="desc">
-                    <p>Course Udemy - Juan Pablo De la torre Valdez</p>
-                </div>
+          </div>
+
+          <div class="imgbox__projects">
+            <a
+              href="https://xenodochial-mccarthy-9b0f29.netlify.app/"
+              target="_blank"
+            >
+              <img class="marula" src="./img/blogcafe.png" alt="" />
+            </a>
+            <div class="desc">
+              <p>Course Udemy - Juan Pablo De la torre Valdez</p>
             </div>
-            
-            <div class="imgbox__projects">
-                <a href="https://meliangithub.github.io/e_mercado/index.html" target="_blank">
-                    <img class="marula desvanecer" src="./img/JapWebFinal.png" alt=""/>
-                </a>
-                <div class="desc">
-                    <p>Course web developer "JaP" - Final project</p>
-                </div>
+          </div>
+
+          <div class="imgbox__projects">
+            <a
+              href="https://6650df66620e7f5ace4d914a--fancy-sprite-b9e5c1.netlify.app/login.html"
+              target="_blank"
+            >
+              <img
+                class="marula desvanecer"
+                src="./img/JapWebFinal.png"
+                alt=""
+              />
+            </a>
+            <div class="desc">
+              <p>Course web developer "JaP" - Final project</p>
             </div>
+          </div>
         </div>
-        
       </section>
     </main>
     <footer id="contact">
@@ -202,7 +242,9 @@
           </p>
 
           <div class="contact__img__container">
-            <a href="#contact"><img src="./img/icons/email.png" alt="" /></a>
+            <a href="mailto:e_melian04@hotmail.com"
+              ><img src="./img/icons/email.png" alt=""
+            /></a>
             <a href="https://github.com/MelianGithub" target="_blank"
               ><img src="./img/icons/github.png" alt=""
             /></a>
@@ -227,7 +269,11 @@
               rows="10"
               cols="50"
             ></textarea>
-            <input type="submit" value="Message me" />
+            <input
+              type="submit"
+              value="Message me"
+              onclick="enviarEmail(event)"
+            />
           </form>
         </div>
       </div>
@@ -238,6 +284,7 @@
         </p>
       </div>
     </footer>
+    <script src="./js/sendemail.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/navBar.js"></script>
   </body>
