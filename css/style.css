@@ -33,18 +33,24 @@ header {
   color: #fff;
   text-decoration: none;
   font-size: 40px;
+<<<<<<< HEAD
 }
 
 .logo:hover{
  color: #f4bb03;
+=======
+>>>>>>> fa622b7f9e425804733321163106a763fd505489
 }
 
 .logo span {
   color: rgb(96, 95, 92);
+<<<<<<< HEAD
 }
 
 .logo span:hover{
   color: #f4bb03;
+=======
+>>>>>>> fa622b7f9e425804733321163106a763fd505489
 }
 
 .navBar {
@@ -224,7 +230,11 @@ header {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
+<<<<<<< HEAD
   gap: 20px;
+=======
+  gap: 60px;
+>>>>>>> fa622b7f9e425804733321163106a763fd505489
   /* margin-top: 80px; */
 }
 
