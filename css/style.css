@@ -35,15 +35,15 @@ header {
   font-size: 40px;
 }
 
-.logo:hover{
- color: #f4bb03;
+.logo:hover {
+  color: #f4bb03;
 }
 
 .logo span {
   color: rgb(96, 95, 92);
 }
 
-.logo span:hover{
+.logo span:hover {
   color: #f4bb03;
 }
 

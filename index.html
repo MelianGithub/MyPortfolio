@@ -4,36 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://www.emanuelmelian.com/" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <!-- Favicon incrustado directamente -->
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCI+PHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIHJ4PSIxNSIgZmlsbD0iIzE1MTUxNSIvPjx0ZXh0IHg9IjUwIiB5PSI2NSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNTAiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZjRiYjAzIj5FPC90ZXh0Pjx0ZXh0IHg9IjYzIiB5PSI2NSIgZm9udC1mYW1pbHk9IkFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNTAiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjNjA2MDYwIj5NPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <meta name="msapplication-TileColor" content="#151515">
+    <meta name="theme-color" content="#151515">
 
-    <!--Meta Tags-->
+    <!--Enhanced Meta Tags-->
     <meta
       name="description"
-      content="Emanuel Melian - Web Developer from Uruguay, currently located in Australia."
+      content="Emanuel Melian - Full Stack Web Developer specializing in React, JavaScript, HTML5 and CSS3. Portfolio showcasing web development projects from Uruguay."
     />
     <meta
       name="keywords"
-      content="Emanuel Melian, Web Developer, Uruguay, Australia"
+      content="Emanuel Melian, Web Developer, Full Stack Developer, Frontend Developer, React Developer, JavaScript Developer, Uruguay Developer, Portfolio, Web Projects"
     />
     <meta name="author" content="Emanuel Melian" />
 
-    <!--Open Graph Tags-->
-    <meta property="og:title" content="Emanuel Melian - Web Developer" />
+    <!--Enhanced Open Graph Tags-->
+    <meta property="og:title" content="Emanuel Melian - Professional Web Developer Portfolio" />
     <meta
       property="og:description"
-      content="Web Developer from Uruguay, currently located in Australia."
+      content="Skilled Web Developer from Uruguay. View my portfolio of websites, applications and web development projects."
     />
     <meta property="og:image" content="./img/laptop.png" />
-    <meta property="og:url" content="https://www.yourwebsite.com/" />
+    <meta property="og:url" content="https://www.emanuelmelian.com/" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Emanuel Melian Portfolio" />
 
-    <!-- Twitter Card -->
+    <!-- Enhanced Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Emanuel Melian - Web Developer" />
+    <meta name="twitter:title" content="Emanuel Melian - Professional Web Developer" />
     <meta
       name="twitter:description"
-      content="Web Developer from Uruguay, currently located in Australia."
+      content="Skilled Web Developer showcasing portfolio projects in HTML, CSS, JavaScript and React."
     />
     <meta name="twitter:image" content="./img/laptop.png" />
+    <meta name="twitter:creator" content="@emanuelmelian" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -58,13 +71,41 @@
       })();
     </script>
 
-    <title>Web Developer Emanuel Melian - Home</title>
+    <!-- Schema.org para Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Emanuel Melian",
+      "url": "https://www.emanuelmelian.com",
+      "image": "https://www.emanuelmelian.com/img/emanuel.png",
+      "sameAs": ["https://github.com/MelianGithub"],
+      "jobTitle": "Web Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      }
+    }
+    </script>
+    
+    <!-- Schema.org para WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Emanuel Melian Portfolio",
+      "url": "https://www.emanuelmelian.com",
+      "description": "Emanuel Melian - Full Stack Web Developer specializing in React, JavaScript, HTML5 and CSS3."
+    }
+    </script>
+
+    <title>Emanuel Melian | Professional Web Developer Portfolio</title>
   </head>
 
   <body>
     <header id="header">
       <div class="logo">
-        <a class="logo" href="">E <span>M</span> </a>
+        <a class="logo" href="#home" aria-label="Emanuel Melian Logo">E <span>M</span> </a>
       </div>
       <nav class="navBar" id="navBar">
         <ul class="menu" id="menu">
@@ -85,7 +126,7 @@
       <section id="home">
         <div class="doscapas">
           <div class="laptop__container animate__animated animate__fadeInLeft">
-            <img class="laptop" src="./img/laptop.png" alt="" />
+            <img class="laptop" src="./img/laptop.png" alt="Laptop showing web development code" loading="eager" />
           </div>
 
           <div class="introduction__container">
@@ -114,8 +155,8 @@
         <div class="doscapas">
           <div class="about__body">
             <div class="about__header">
-              <h3 class="about__aboutme">About me</h3>
-              <h4 class="about__hello">
+              <h2 class="about__aboutme">About me</h2>
+              <h3 class="about__hello">
                 <span>Hello,</span> I'm Emanuel, Web Developer
               </h4>
             </div>
@@ -125,29 +166,30 @@
                 I love developing web pages and I have already created some
                 websites. However, I never stop learning and constantly strive
                 to improve my development skills to deliver even better results.
+                My expertise includes <a href="#skills" style="color: #ffff">HTML, CSS, JavaScript, and React</a>.
               </p>
 
               <a class="introduction__footer" href="#projects"
-                >Have a look of my projects</a
+                >Have a look at my projects</a
               >
             </div>
           </div>
           <div class="about__img__container">
-            <img class="emanuel" src="./img/emanuel.png" alt="" />
+            <img class="emanuel" src="./img/emanuel.png" alt="Emanuel Melian, Web Developer" loading="lazy" />
           </div>
         </div>
       </section>
 
       <section id="skills">
         <div>
-          <h5 class="skills__title">Skills and Tools</h5>
+          <h2 class="skills__title">Skills and Tools</h2>
         </div>
         <div class="skills__img__container">
           <!-- Con boxicon -->
           <i class="bx bxl-html5" style="color: #e44d26"></i>
           <i class="bx bxl-css3" style="color: #1572b6"></i>
           <i class="bx bxl-bootstrap" style="color: #563d7c"></i>
-          <i class="bx bxl-sass" style="color: #cc6699"></i>
+          <i class="bx bxl-typescript" style="color: #5d5bd3"></i>
           <i class='bx bxl-tailwind-css'></i>
           <i class="bx bxl-javascript" style="color: #f7df1e"></i>
           <i class="bx bxl-react" style="color: #61dafb"></i>
@@ -155,12 +197,12 @@
       </section>
       <section id="projects">
         <div>
-          <h6 class="projects__title">Projects</h6>
+          <h2 class="projects__title">Projects</h2>
         </div>
         <div class="projects__img__container">
           <div class="imgbox__projects">
             <a href="https://www.maruladesigns.com/" target="_blank">
-              <img class="marula" src="./img/marulapagina.png" alt="" />
+              <img class="marula" src="./img/marulapagina.png" alt="Mariana Medina's graphic design portfolio website" loading="lazy" />
               <div class="desc">
                 <p>Mariana Medina's professional portfolio, graphic designer</p>
               </div>
@@ -173,7 +215,7 @@
               href="https://664bb72d11b5252cd06c1129--mellifluous-kringle-ebecbb.netlify.app/"
               target="_blank"
             >
-              <img class="marula" src="./img/reymarollos.jpg" alt="" />
+              <img class="marula" src="./img/reymarollos.jpg" alt="Reyma Rollos e-commerce website" loading="lazy" />
               <div class="desc">
                 <p>E-commerce Reyma rollos, a privite company</p>
               </div>
@@ -182,11 +224,11 @@
           </div>
 
           <div class="imgbox__projects">
-            <a href="https://emanuelfront-end.netlify.app/" target="_blank">
-              <img class="marula" src="./img/miweb.png" alt="" />
+            <a href="https://www.tradingetm.com/es" target="_blank">
+              <img class="marula" src="./img/etm.png" alt="Trading community platform" loading="lazy" />
 
               <div class="desc">
-                <p>My portfolio web was developed for myself</p>
+                <p>A trading community platform</p>
               </div>
             </a>
             
@@ -197,7 +239,7 @@
               href="https://elegant-franklin-3f1508.netlify.app/contacto"
               target="_blank"
             >
-              <img class="marula" src="./img/BienesRaicesWeb.png" alt="" />
+              <img class="marula" src="./img/BienesRaicesWeb.png" alt="Real estate website project from Udemy course" loading="lazy" />
               <div class="desc">
                 <p>Course Udemy - Juan Pablo De la torre Valdez</p>
               </div>
@@ -210,7 +252,7 @@
               href="https://xenodochial-mccarthy-9b0f29.netlify.app/"
               target="_blank"
             >
-              <img class="marula" src="./img/blogcafe.png" alt="" />
+              <img class="marula" src="./img/blogcafe.png" alt="Coffee blog website project from Udemy course" loading="lazy" />
               <div class="desc">
                 <p>Course Udemy - Juan Pablo De la torre Valdez</p>
               </div>
@@ -220,16 +262,17 @@
 
           <div class="imgbox__projects">
             <a
-              href="https://6650df66620e7f5ace4d914a--fancy-sprite-b9e5c1.netlify.app/login.html"
+              href="https://www.tradingetm.com/es/sabio-trade"
               target="_blank"
             >
               <img
                 class="marula desvanecer"
-                src="./img/JapWebFinal.png"
-                alt=""
+                src="./img/sabioTrade.png"
+                alt="SabioTrade - Trading platform"
+                loading="lazy"
               />
               <div class="desc">
-                <p>Course web developer "JaP" - Final project</p>
+                <p>SabioTrade - Trading platform</p>
               </div>
             </a>
             
@@ -239,7 +282,7 @@
     </main>
     <footer id="contact">
       <div>
-        <h2 class="contact__title">Contact me</h2>
+        <h2 class="contact__title" id="contact-heading">Contact me</h2>
       </div>
       <div class="contact__body">
         <div class="contact__info">
@@ -250,11 +293,11 @@
           </p>
 
           <div class="contact__img__container">
-            <a href="mailto:e_melian04@hotmail.com"
-              ><img src="./img/icons/email.png" alt=""
+            <a href="mailto:e_melian04@hotmail.com" aria-label="Send me an email"
+              ><img src="./img/icons/email.png" alt="Email icon" width="32" height="32"
             /></a>
-            <a href="https://github.com/MelianGithub" target="_blank"
-              ><img src="./img/icons/github.png" alt=""
+            <a href="https://github.com/MelianGithub" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile"
+              ><img src="./img/icons/github.png" alt="GitHub icon" width="32" height="32"
             /></a>
           </div>
         </div>
@@ -287,8 +330,7 @@
       </div>
       <div class="footer">
         <p>
-          2024 All rights reserved - Designed by Marula and developed by Emanuel
-          Melian
+          2024 All rights reserved - Designed by <a href="https://www.maruladesigns.com/" target="_blank" rel="noopener noreferrer">Marula</a> and developed by <a href="#home">Emanuel Melian</a>
         </p>
       </div>
     </footer>
