@@ -10,10 +10,6 @@ function enviarEmail(event) {
     .send("service_xqyogzk", "template_ec6nn0n", parms)
     .then((response) => {
       console.log("SUCCESS!", response.status, response.text);
-<<<<<<< HEAD
       window.location.href = "https://emelianfurest.com/";
-=======
-      window.location.href = "/";
->>>>>>> fa622b7f9e425804733321163106a763fd505489
     });
 }
