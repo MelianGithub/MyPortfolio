@@ -358,8 +358,9 @@ header {
 
 .contact__img__container a img {
   cursor: pointer;
-  width: 40%;
+  width: 70%;
   margin-top: 20px;
+  object-fit: contain;
 }
 
 .contact__img__container a img:hover {
@@ -434,6 +435,10 @@ header {
 .footer {
   color: #fff;
   display: flex;
+}
+
+.footer a {
+  color: #fff;
 }
 
 .hidden {
@@ -716,5 +721,8 @@ i {
 
   .footer {
     text-align: center;
+  }
+  .footer a {
+    color: #fff;
   }
 }
